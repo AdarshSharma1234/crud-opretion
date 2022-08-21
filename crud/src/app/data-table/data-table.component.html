@@ -1,0 +1,92 @@
+<div class="container flex justify-center mx-auto">
+    <div class="flex flex-col">
+        <div class="w-full">
+            <div class="p-12 border-b border-gray-200 shadow">
+                <table class="divide-y divide-gray-300" id="dataTable">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                ID
+                            </th>
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                Name
+                            </th>
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                Email
+                            </th>
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                Password
+                            </th>
+
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                Address
+                            </th>
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                Date-of-Birth
+                            </th>
+
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                Today-Date
+                            </th>
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                Mobile-No
+                            </th>
+
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                Created_at
+                            </th>
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                Edit
+                            </th>
+                            <th class="px-6 py-2 text-xs text-gray-500">
+                                Delete
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-500">
+                        <tr *ngFor="let user of dataTabe; let i=index" class="whitespace-nowrap">
+                            <td class="px-6 py-4 text-sm text-center text-gray-500">
+                                {{i+1}}
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="text-sm text-gray-900">
+                                    {{user.name}}
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="text-sm text-gray-500">{{user.email}}</div>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-center text-gray-500">
+                                {{user.password}}
+                            </td>
+                            <td class="px-6 py-4 text-sm text-center text-gray-500">
+                                {{user.address}}
+                            </td>
+                            <td class="px-6 py-4 text-sm text-center text-gray-500">
+                                {{user.dob}}
+                            </td>
+                            <td class="px-6 py-4 text-sm text-center text-gray-500">
+                                {{user.date}}
+                            </td>
+                            <td class="px-6 py-4 text-sm text-center text-gray-500">
+                                {{user.number}}
+                            </td>
+
+                            <td class="px-6 py-4 text-center">
+                                <a href="#"
+                                    class="px-4 py-1 text-sm text-blue-600 bg-blue-200 rounded-full">Edit</a>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <a href="#"
+                                    class="px-4 py-1 text-sm text-red-400 bg-red-200 rounded-full">Delete</a>
+                            </td>
+                        </tr>
+                       
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

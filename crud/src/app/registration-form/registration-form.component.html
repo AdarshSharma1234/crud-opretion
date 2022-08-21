@@ -1,0 +1,64 @@
+<p>registration-form works!</p>
+<div class="">
+    <form #userform="ngForm" (ngSubmit)="onsubmit(userform.value)">
+      <div class=" bg-white p-2 mx-auto w-1/2 shadow-2xl rounded-md mt-20 ">
+        <h1 class="text-center font-bold text-lg font-serif  hover:underline decoration-sky-700 underl ine-offset-4" >Registretion - Form</h1>
+        
+        <div class="grid xl:grid-cols-2 gap-5 mt-4">
+    <div>
+      <label for="">Name:</label>
+         
+            <input type="text" [(ngModel)]="user.name" name="name" id="name" class="border-2 border-black py-2 px-2 rounded w-full"
+             placeholder="Enter name">
+    </div>
+    <div>
+      <label for="">Email:</label>
+         
+            <input type="text" [(ngModel)]="user.email" name="email " id="email" class="border-2 border-black py-2 px-2 rounded w-full"
+             placeholder="Enter email">
+    </div>
+    <div>
+      <label for="">Password:</label>
+         
+            <input type="password" [(ngModel)]="user.password"  name="password" id="password" class="border-2 border-black py-2 px-2 rounded w-full" 
+            placeholder="Enter password">
+    </div>
+    
+    <div>
+      <label for="">Address:</label>
+         
+            <input type="address" [(ngModel)]="user.address" name="address" id="address" class="border-2 border-black py-2 px-2 rounded w-full" 
+            placeholder="Enter Addrsss">
+    </div>
+    <div>
+      <label for="">Date-of-Birth:</label>
+         
+            <input type="dob" [(ngModel)]="user.dob" name="dob"  id="dob" class="border-2 border-black py-2 px-2 
+            rounded w-full" 
+            placeholder="Enter dob">
+    </div>
+    <div>
+      <label for="">Today-Date:</label>
+         
+            <input type="date" [(ngModel)]="user.date" name="date" id="date" class="border-2 border-black py-2 px-2 rounded w-full" 
+            placeholder="Enter date">
+    </div>
+    <div>
+      <label for="">Mobile-No:</label>
+         
+            <input type="number" [(ngModel)]="user.number" name="number" id="phone-no" class="border-2 border-black py-2 px-2 rounded w-full"
+             placeholder="Enter mobile-no">
+    </div>
+          
+          
+        </div>
+        <div class="xl:space-x-4 space-y-4 mt-2">
+        <button class="border-2 border-red-500 px-20 py-2 text-white bg-sky-800 rounded-md shadow-2xl" (click)="saveUser()">Save</button>
+        <button class=" border-2 border-blue-500 px-20 py-2 rounded-md shadow-2xl">Cancle</button>
+      </div>
+       
+      </div>
+    </form>
+     
+     
+    </div>
